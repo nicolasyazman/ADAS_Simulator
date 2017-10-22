@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mathematics\MonteCarloGDOP.cs" />
+    <Compile Include="Mathematics\MonteCarloTemplate.cs" />
     <Compile Include="Mathematics\MyMatrix.cs" />
     <Compile Include="Mathematics\Vector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
