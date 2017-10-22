@@ -1,0 +1,15 @@
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\bin\Debug\ADAS_Simulator_GUI.exe.config
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\bin\Debug\ADAS_Simulator_GUI.exe
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\bin\Debug\ADAS_Simulator_GUI.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\obj\Debug\ADAS_Simulator_GUI.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\obj\Debug\MainWindow.g.cs
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\obj\Debug\App.g.cs
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\obj\Debug\ADAS_Simulator_GUI_MarkupCompile.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\obj\Debug\ADAS_Simulator_GUI_MarkupCompile.lref
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\obj\Debug\MainWindow.baml
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\obj\Debug\ADAS_Simulator_GUI.g.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\obj\Debug\ADAS_Simulator_GUI.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\obj\Debug\ADAS_Simulator_GUI.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\obj\Debug\ADAS_Simulator_GUI.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\obj\Debug\ADAS_Simulator_GUI.exe
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_GUI\obj\Debug\ADAS_Simulator_GUI.pdb

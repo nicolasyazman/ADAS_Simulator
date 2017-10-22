@@ -1,0 +1,6 @@
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_Core\bin\Debug\ADAS_Simulator_Core.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_Core\bin\Debug\ADAS_Simulator_Core.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_Core\obj\Debug\ADAS_Simulator_Core.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_Core\obj\Debug\ADAS_Simulator_Core.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_Core\obj\Debug\ADAS_Simulator_Core.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_Core\obj\Debug\ADAS_Simulator_Core.pdb

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ShowCheckBoxes="false">
+  <TopNode>[0-1005]C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_Tests\bin\Debug\ADAS_Simulator_Tests.dll</TopNode>
+  <SelectedNode>[0-1005]C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_Tests\bin\Debug\ADAS_Simulator_Tests.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1005]C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_Tests\bin\Debug\ADAS_Simulator_Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1006]ADAS_Simulator_Tests" Expanded="true" />
+    <Node UniqueName="[0-1007]ADAS_Simulator_Tests.Mathematics" Expanded="true" />
+    <Node UniqueName="[0-1002]ADAS_Simulator_Tests.Mathematics.VectorTests" Expanded="true" />
+    <Node UniqueName="[0-1000]ADAS_Simulator_Tests.UnitTest1" Expanded="true" />
+  </Nodes>
+</VisualState>

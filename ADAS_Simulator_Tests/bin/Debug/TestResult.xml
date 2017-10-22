@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_Tests\bin\Debug\ADAS_Simulator_Tests.dll" total="3" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-10-22" time="10:41:16">
+  <environment nunit-version="2.6.4.14350" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_Tests\bin\Debug" machine-name="USER-PC" user="user" user-domain="user-PC" />
+  <culture-info current-culture="fr-FR" current-uiculture="fr-FR" />
+  <test-suite type="Assembly" name="C:\Users\user\Documents\Visual Studio 2017\Projects\ADAS_Simulator\ADAS_Simulator_Tests\bin\Debug\ADAS_Simulator_Tests.dll" executed="True" result="Success" success="True" time="0.537" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="ADAS_Simulator_Tests" executed="True" result="Success" success="True" time="0.529" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Mathematics" executed="True" result="Success" success="True" time="0.514" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="VectorTests" executed="True" result="Success" success="True" time="0.514" asserts="0">
+                <results>
+                  <test-case name="ADAS_Simulator_Tests.Mathematics.VectorTests.Random_Unit_Vectors_Coordinates_Should_Be_Between_0_And_1" executed="True" result="Success" success="True" time="0.434" asserts="0" />
+                  <test-case name="ADAS_Simulator_Tests.Mathematics.VectorTests.RandomUnitVectorNormShouldBeOneOrNearOne" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="UnitTest1" executed="True" result="Success" success="True" time="0.011" asserts="0">
+            <results>
+              <test-case name="ADAS_Simulator_Tests.UnitTest1.TestMethod1" executed="True" result="Success" success="True" time="0.011" asserts="1" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

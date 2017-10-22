@@ -1,0 +1,15 @@
+﻿using System;
+using NUnit.Framework;
+
+namespace ADAS_Simulator_Tests
+{
+    [TestFixture]
+    public class UnitTest1
+    {
+        [Test]
+        public void TestMethod1()
+        {
+            Assert.AreEqual(1, 1);
+        }
+    }
+}
