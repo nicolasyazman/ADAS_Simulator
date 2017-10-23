@@ -8,6 +8,14 @@ namespace ADAS_Simulator_Core.Mathematics
 {
     public class MonteCarloGDOP : MonteCarloTemplate
     {
+        private Random rand;
+
+        public MonteCarloGDOP(Random r = null)
+        {
+            this.rand = r ?? new Random();
+        }
+
+
         public override int VarsCalcFunction(double[] vars, int varsCount, ref int currentTryNumber, int triesPerIteration, double[] bestGlobalLowerBounds, double[] bestGlobalUpperBounds)
         {
             int idx;
@@ -16,7 +24,7 @@ namespace ADAS_Simulator_Core.Mathematics
             {
                 for (idx = 0; idx < (varsCount / 3); idx++)
                 {
-                    Vector v = Vector.GetRandomUnitVector();
+                    Vector v = Vector.GetRandomUnitVector(this.rand);
                     vars[idx * 3] = v.X;
                     vars[idx * 3 + 1] = v.Y;
                     vars[idx * 3 + 2] = v.Z;
@@ -26,7 +34,7 @@ namespace ADAS_Simulator_Core.Mathematics
             {
                 for (idx = 0; idx < (varsCount / 3); idx++)
                 {
-                    Vector v = Vector.GetRandomBoundedUnitVector(Math.Min(bestGlobalLowerBounds[idx * 3], bestGlobalUpperBounds[idx * 3]), Math.Max(bestGlobalLowerBounds[idx * 3], bestGlobalUpperBounds[idx * 3]));
+                    Vector v = Vector.GetRandomBoundedUnitVector(this.rand, Math.Min(bestGlobalLowerBounds[idx * 3], bestGlobalUpperBounds[idx * 3]), Math.Max(bestGlobalLowerBounds[idx * 3], bestGlobalUpperBounds[idx * 3]));
                     vars[idx * 3] = v.X;
                     vars[idx * 3 + 1] = v.Y;
                     vars[idx * 3 + 2] = v.Z;
@@ -37,41 +45,31 @@ namespace ADAS_Simulator_Core.Mathematics
 
         public override int ComputationFunction(double[] vars, int varsCount, ref double foundVal)
         {
-            /* int i, j;
-             double** hMatrix, **dopMatrix;
+             int i, j;
+             Matrix hMatrix, dopMatrix;
 
-             if ((hMatrix = MyMatrix::init_matrix_double(varsCount / 3, 4)) == NULL)
-                 return -1;
+            hMatrix = new Matrix(varsCount / 3, 4);
 
              for (j = 0; j < varsCount / 3; j++)
              {
-                 hMatrix[j][0] = vars[j * 3];
-                 hMatrix[j][1] = vars[j * 3 + 1];
-                 hMatrix[j][2] = vars[j * 3 + 2];
-                 hMatrix[j][3] = 1.0L;
+                 hMatrix[j,0] = vars[j * 3];
+                 hMatrix[j,1] = vars[j * 3 + 1];
+                 hMatrix[j,2] = vars[j * 3 + 2];
+                 hMatrix[j,3] = 1.0;
              }
 
-             if ((dopMatrix = MyMatrix::init_matrix_double(4, 4)) == NULL)
-                 return -1;
+            dopMatrix = Matrix.Multiplication(hMatrix, hMatrix, false, true);
 
-             MyMatrix::matrix_multiplication_transpose(hMatrix, hMatrix, dopMatrix, varsCount / 3, 4, varsCount / 3, 4);
-             double* multLOS = (double*)malloc(sizeof(double) * 16);
-             double* inv = (double*)malloc(sizeof(double) * 16);
+            double[] multLOS = new double[16];
+            double[] inv = new double[16];
              for (i = 0; i < 4; i++)
-             {
                  for (j = 0; j < 4; j++)
-                 {
-                     multLOS[i * 4 + j] = dopMatrix[i][j];
-                 }
-             }
-             MyMatrix::MatrixInvert4(vars, inv);
-             foundVal = sqrt(fabs((inv[0] + inv[5] + inv[10] + inv[15])));
+                     multLOS[i * 4 + j] = dopMatrix[i,j];
 
-             free(inv);
-             free(multLOS);
-             MyMatrix::free_matrix_double(&hMatrix, varsCount / 3);
-             MyMatrix::free_matrix_double(&dopMatrix, 4);
-             */
+             Matrix dopResMatrix = Matrix.Inverse(dopMatrix);
+             foundVal = Math.Sqrt(dopResMatrix[0,0] + dopResMatrix[1,1] + dopResMatrix[2,2] + dopResMatrix[3,3]);
+            
+  
              return 1;
          }
 

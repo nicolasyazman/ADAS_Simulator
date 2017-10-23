@@ -31,7 +31,7 @@ namespace ADAS_Simulator_Core.Mathematics
             return random.NextDouble() * (maximum - minimum) + minimum;
         }
 
-        public static Vector GetRandomUnitVector(double? xsqrNullable = null, Random random = null)
+        public static Vector GetRandomUnitVector(Random random = null, double ? xsqrNullable = null)
         {
             
             double xsqr, ysqr, newvec_x, newvec_y, newvec_z;
@@ -51,7 +51,7 @@ namespace ADAS_Simulator_Core.Mathematics
         }
 
 
-        public static Vector GetRandomBoundedUnitVector(double LowerXBound = 0.0, double UpperXBound = 1.0, Random random = null)
+        public static Vector GetRandomBoundedUnitVector(Random random = null, double LowerXBound = 0.0, double UpperXBound = 1.0)
         {
             double xsqr;
             
@@ -64,7 +64,7 @@ namespace ADAS_Simulator_Core.Mathematics
             xsqr = RandomFloat(LowerXBound * LowerXBound, UpperXBound * UpperXBound);
             xsqr *= xsqr; // Introducing this to search around x, remove this line if you want to search exactly in the boundary of x. Useful for Monte Carlo algorithm with correlated variables.
 
-            return GetRandomUnitVector(xsqr);
+            return GetRandomUnitVector(random, xsqr);
         }
 
     }

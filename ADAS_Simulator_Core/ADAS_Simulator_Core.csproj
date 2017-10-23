@@ -40,14 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Tracking\Receiver\DOP.cs" />
     <Compile Include="Mathematics\MonteCarloGDOP.cs" />
     <Compile Include="Mathematics\MonteCarloTemplate.cs" />
-    <Compile Include="Mathematics\MyMatrix.cs" />
+    <Compile Include="Mathematics\Matrix.cs" />
     <Compile Include="Mathematics\Vector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Core\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
