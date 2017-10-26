@@ -23,7 +23,7 @@ namespace ADAS_Simulator_Core.Mathematics
             return 1;
         }
 
-        public int MonteCarloMethodMainLoop(double[] vars, int varsCount, double expected, double precision, ref int currentTryNb, int triesPerIteration, ref double bestUpperFoundVal, ref double bestLowerFoundVal, double[] bestLocalLowerBounds, double[] bestLocalUpperBounds, double[] bestGlobalLowerBounds, double[] bestGlobalUpperBounds)
+        private int MonteCarloMethodMainLoop(double[] vars, int varsCount, double expected, double precision, ref int currentTryNb, int triesPerIteration, ref double bestUpperFoundVal, ref double bestLowerFoundVal, double[] bestLocalLowerBounds, double[] bestLocalUpperBounds, double[] bestGlobalLowerBounds, double[] bestGlobalUpperBounds)
         {
             int i, idx, retCode;
             double foundVal = 0.0;
@@ -92,8 +92,6 @@ namespace ADAS_Simulator_Core.Mathematics
             int i, res = 0;
             double[] bestLocalLowerBounds, bestLocalUpperBounds, bestGlobalLowerBounds, bestGlobalUpperBounds;
             double bestUpperFoundVal, bestLowerFoundVal;
-
-            int correctNb = 0;
             
             bestLocalLowerBounds = new double[varsCount];
             bestLocalUpperBounds = new double[varsCount];

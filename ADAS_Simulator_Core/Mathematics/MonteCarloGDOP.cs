@@ -45,7 +45,7 @@ namespace ADAS_Simulator_Core.Mathematics
 
         public override int ComputationFunction(double[] vars, int varsCount, ref double foundVal)
         {
-             int i, j;
+             int j;
              Matrix hMatrix, dopMatrix;
 
             hMatrix = new Matrix(varsCount / 3, 4);
@@ -60,11 +60,8 @@ namespace ADAS_Simulator_Core.Mathematics
 
             dopMatrix = Matrix.Multiplication(hMatrix, hMatrix, false, true);
 
-            double[] multLOS = new double[16];
+            double[] multLOS = Vector.Vectorize(dopMatrix).ToArray();
             double[] inv = new double[16];
-             for (i = 0; i < 4; i++)
-                 for (j = 0; j < 4; j++)
-                     multLOS[i * 4 + j] = dopMatrix[i,j];
 
              Matrix dopResMatrix = Matrix.Inverse(dopMatrix);
              foundVal = Math.Sqrt(dopResMatrix[0,0] + dopResMatrix[1,1] + dopResMatrix[2,2] + dopResMatrix[3,3]);
