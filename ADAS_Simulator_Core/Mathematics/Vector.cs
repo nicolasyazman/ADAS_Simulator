@@ -43,19 +43,10 @@ namespace ADAS_Simulator_Core.Mathematics
             Data = new double[size];
         }
 
-        public Vector(double[] data, int numberOfElemsInVector = 0)
+        public Vector(double[] data)
         {
-            if (numberOfElemsInVector <= 0)
-            {
-                Data = new double[data.Length];
-                Array.Copy(data, Data, data.Length);
-            }
-            else
-            {
-                Data = new double[numberOfElemsInVector];
-                Array.Copy(data, Data, numberOfElemsInVector);
-            }
-                
+            Data = new double[data.Length];
+            Array.Copy(data, Data, data.Length);
         }
 
         public double GetNorm()
@@ -63,7 +54,7 @@ namespace ADAS_Simulator_Core.Mathematics
             double sum = 0.0;
             for (int i = 0; i < Size; i++)
                 sum += Data[i] * Data[i];
-            return Math.Sqrt(sum);
+            return sum;
         }
 
         public static double RandomFloat(double minimum, double maximum, Random random = null)
