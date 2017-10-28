@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ADAS_Simulator_Core</RootNamespace>
     <AssemblyName>ADAS_Simulator_Core</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Tracking\Receiver\DOP.cs" />
+    <Compile Include="Core\Tracking\Satellite\Constellation.cs" />
+    <Compile Include="Core\Tracking\Satellite\Ephemeris.cs" />
+    <Compile Include="Core\Tracking\Satellite\SatelliteBase.cs" />
     <Compile Include="IO\FileReaders\RinexFileReader.cs" />
+    <Compile Include="IO\FileReaders\RinexNavFileReader.cs" />
     <Compile Include="Mathematics\MonteCarloGDOP.cs" />
     <Compile Include="Mathematics\MonteCarloTemplate.cs" />
     <Compile Include="Mathematics\Matrix.cs" />
